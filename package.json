@@ -1,15 +1,13 @@
 {
   "name": "seapelt",
-  "description": "Gatsby default starter",
   "version": "1.0.0",
+  "description": "Gatsby default starter",
   "author": "Josh Bassett <josh.bassett@gmail.com> (http://joshbassett.info)",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "make start",
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -27,6 +25,6 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "standard": "^11.0.0"
   }
 }
