@@ -6,8 +6,8 @@ import Layout from '../components/layout'
 const IndexPage = () => (
   <Layout>
     <h1>SEAPELT</h1>
-    <h2>Releases</h2>
-    <p>Lorem ipsum dolor amet offal ennui man bun, franzen gluten-free jean shorts taxidermy waistcoat 90's. Kinfolk affogato photo booth, fingerstache live-edge man braid hella. 3 wolf moon plaid retro taxidermy cloud bread pabst portland keffiyeh knausgaard offal. Deep v slow-carb kale chips skateboard heirloom. Tofu enamel pin meggings mumblecore, viral pok pok af gluten-free plaid gochujang chambray keffiyeh prism marfa. Tumeric you probably haven't heard of them VHS, artisan marfa tattooed sustainable banh mi trust fund coloring book biodiesel whatever.</p>
+    <p>Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.</p>
+    <p>Incorporating elements of IDM with minimised electronica, modern classical, and ambient &mdash; his tracks evoke a sense of nostalgia for the lost sounds of decades past.</p>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
