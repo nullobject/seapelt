@@ -4,23 +4,24 @@ import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
 
 import '../stylesheets/styles.scss'
-
 import Header from '../components/header'
 import styles from './layout.module.scss'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
+const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
       }
-    `}
+    }
+  }
+`
+
+const Layout = ({children}) => (
+  <StaticQuery
+    query={query}
     render={data => (
-      <>
+      <React.Fragment>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -28,13 +29,13 @@ const Layout = ({ children }) => (
             {name: 'keywords', content: 'seapelt, electronic music, idm, ambient, electronica'}
           ]}
         >
-          <html lang="en" />
+          <html lang='en' />
         </Helmet>
         <Header title={data.site.siteMetadata.title} />
         <div className={styles.container}>
           {children}
         </div>
-      </>
+      </React.Fragment>
     )}
   />
 )
