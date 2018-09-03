@@ -1,6 +1,9 @@
-.header a {
+.header {
+  display: flex;
+  justify-content: space-between;
   color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
+  font-size: 2rem;
+
+  .social {
+  }
 }
