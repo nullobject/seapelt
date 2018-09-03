@@ -24,8 +24,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {name: 'description', content: 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.'},
+            {name: 'keywords', content: 'seapelt, electronic music, idm, ambient, electronica'}
           ]}
         >
           <html lang="en" />
