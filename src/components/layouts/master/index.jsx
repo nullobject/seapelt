@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
 
 import '../../../stylesheets/styles.scss'
-import Social from '../../social'
+import Footer from '../../footer'
 import styles from './styles.module.scss'
 
 const description = 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.'
@@ -32,10 +32,10 @@ const Layout = ({children}) => (
         >
           <html lang='en' />
         </Helmet>
-        <Social />
         <div className={styles.container}>
           {children}
         </div>
+        <Footer />
       </React.Fragment>
     )}
   />
