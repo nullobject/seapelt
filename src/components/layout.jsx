@@ -7,19 +7,17 @@ import '../stylesheets/styles.scss'
 import Header from '../components/header'
 import styles from './layout.module.scss'
 
-const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
-
 const Layout = ({children}) => (
   <StaticQuery
-    query={query}
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
     render={data => (
       <React.Fragment>
         <Helmet
