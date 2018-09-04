@@ -4,7 +4,9 @@ import Layout from '../components/layout'
 
 const ProjectsPage = () => (
   <Layout>
-    <p>lorem ipsum</p>
+    <p>Sydney Fringe Festival, 2018</p>
+    <p>Electrofringe Festival, 2018</p>
+    <p>Beat Collective, 2018</p>
   </Layout>
 )
 
