@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Layout from '../components/layout'
+import Layout from '../components/layouts/detail'
 
 const BioPage = () => (
   <Layout>

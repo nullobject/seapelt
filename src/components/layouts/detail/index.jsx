@@ -3,14 +3,17 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
 
-import '../../stylesheets/styles.scss'
-import Header from '../header'
+import '../../../stylesheets/styles.scss'
+import Header from '../../header'
 import styles from './styles.module.scss'
+
+const description = 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.'
+const keywords = 'seapelt, electronic music, idm, ambient, electronica'
 
 const Layout = ({children}) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query DetailQuery {
         site {
           siteMetadata {
             title
@@ -23,8 +26,8 @@ const Layout = ({children}) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            {name: 'description', content: 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.'},
-            {name: 'keywords', content: 'seapelt, electronic music, idm, ambient, electronica'}
+            {name: 'description', content: description},
+            {name: 'keywords', content: keywords}
           ]}
         >
           <html lang='en' />
