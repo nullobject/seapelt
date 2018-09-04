@@ -1,15 +1,16 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import {push} from 'gatsby'
 
+import Button from '../components/button'
 import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
     <h1>Seapelt</h1>
     <nav>
-      <Link to='/releases/'>Releases</Link>
-      <Link to='/bio/'>Biography</Link>
-      <Link to='/contact/'>Contact</Link>
+      <Button to='/releases/'>Releases</Button>
+      <Button to='/bio/'>Biography</Button>
+      <Button to='/contact/'>Contact</Button>
     </nav>
   </Layout>
 )
