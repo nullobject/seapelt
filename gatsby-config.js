@@ -15,6 +15,14 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/icon.png'
       }
+    }, {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-20723605-8',
+        head: false,
+        anonymize: true,
+        respectDNT: true
+      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-sass'
