@@ -1,5 +1,4 @@
 import React from 'react'
-import {push} from 'gatsby'
 
 import Button from '../components/button'
 import Layout from '../components/layout'
