@@ -9,6 +9,7 @@ const IndexPage = () => (
     <nav>
       <Link to='/releases/'>Releases</Link>
       <Link to='/bio/'>Biography</Link>
+      <Link to='/contact/'>Contact</Link>
     </nav>
   </Layout>
 )
