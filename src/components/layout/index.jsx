@@ -8,16 +8,15 @@ import Header from '../header'
 import Footer from '../footer'
 import styles from './styles.module.scss'
 
-const description = 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.'
-const keywords = 'seapelt, electronic music, idm, ambient, electronica'
-
 const Layout = ({children}) => (
   <StaticQuery
     query={graphql`
-      query DetailQuery {
+      query SiteMetadataQuery {
         site {
           siteMetadata {
-            title
+            title,
+            description,
+            keywords
           }
         }
       }
@@ -27,8 +26,8 @@ const Layout = ({children}) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            {name: 'description', content: description},
-            {name: 'keywords', content: keywords}
+            {name: 'description', content: data.site.siteMetadata.description},
+            {name: 'keywords', content: data.site.siteMetadata.keywords}
           ]}
         >
           <html lang='en' />
