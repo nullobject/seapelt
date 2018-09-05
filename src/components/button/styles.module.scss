@@ -21,7 +21,7 @@
     outline: 0;
   }
 
-  &:hover {
+  &:hover, &.active {
     background-color: white;
     border-color: white;
     color: black;
