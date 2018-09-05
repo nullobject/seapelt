@@ -1,0 +1,21 @@
+.projects {
+  list-style: none;
+
+  li {
+    display: flex;
+    margin-bottom: 1rem;
+
+    time {
+      text-transform: uppercase;
+      width: 6rem;
+      padding-right: 1rem;
+    }
+
+    header {
+    }
+  }
+}
+
+.location {
+  font-size: 0.75rem;
+}

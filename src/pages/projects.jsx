@@ -2,19 +2,13 @@ import React from 'react'
 import {graphql} from 'gatsby'
 
 import Layout from '../components/layout'
-
-const Project = ({project: {date, title, location}}) => (
-  <li>
-    <time dateTime='{date}'>{date}</time>
-    <span>{title}</span> @ <span>{location}</span>
-  </li>
-)
+import Projects from '../components/projects'
 
 const ProjectsPage = ({data: {allProjectsJson: {edges}}}) => {
-  const projects = edges.map(edge => <Project key={edge.node.id} project={edge.node} />)
+  const projects = edges.map(edge => edge.node)
   return (
     <Layout>
-      <ul>{projects}</ul>
+      <Projects projects={projects} />
     </Layout>
   )
 }
@@ -27,7 +21,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMM DD YYYY")
           title
           location
         }
