@@ -1,18 +1,33 @@
 import React from 'react'
+import {graphql} from 'gatsby'
 
 import Layout from '../components/layout'
+import Releases from '../components/releases'
 
-const ReleasesPage = () => (
-  <Layout>
-    <h2>Releases</h2>
-    <iframe seamless
-      style={{border: 0, width: '100%', height: '120px'}}
-      src='https://bandcamp.com/EmbeddedPlayer/album=3974169918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/'
-      title='Astrolabe'
-    >
-      <a href='http://seapelt.bandcamp.com/album/astrolabe'>Astrolabe by Seapelt</a>
-    </iframe>
-  </Layout>
-)
+const ReleasesPage = ({data: {allReleasesJson: {edges}}}) => {
+  const releases = edges.map(edge => edge.node)
+  return (
+    <Layout>
+      <h2>Releases</h2>
+      <Releases releases={releases} />
+    </Layout>
+  )
+}
 
 export default ReleasesPage
+
+export const pageQuery = graphql`
+  query {
+    allReleasesJson {
+      edges {
+        node {
+          id
+          title
+          year
+          cover
+          url
+        }
+      }
+    }
+  }
+`
