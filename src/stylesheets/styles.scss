@@ -1,12 +1,12 @@
 @import "./type";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: white;
-  background: url(../images/background.jpg) no-repeat center center fixed;
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  color: #333;
 }
 
 html, body {

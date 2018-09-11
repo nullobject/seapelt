@@ -46,7 +46,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 4rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 1rem;
+  padding-left: 0.5rem;
 }
 
 h2 {
@@ -64,7 +65,7 @@ p {
 }
 
 a {
-  color: palegoldenrod;
+  color: #0687f5;
   text-decoration: none;
   transition: text-shadow 0.15s ease-in-out;
 

@@ -1,5 +1,24 @@
+@import "../../stylesheets/breakpoints";
+
 .header {
-  a {
-    color: white;
+  background: url(../../images/background.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 20rem;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  nav {
+    margin-bottom: 5rem;
+  }
+
+  h1 {
+    @include for-phone {
+      font-size: 3rem;
+    }
+
+    @include for-desktop {
+      font-size: 4rem;
+    }
   }
 }

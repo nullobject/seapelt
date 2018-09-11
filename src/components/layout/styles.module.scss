@@ -1,6 +1,17 @@
+@import "../../stylesheets/breakpoints";
+
 .container {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 1rem;
-  max-width: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include for-phone {
+    max-width: 320px;
+  }
+
+  @include for-desktop {
+    max-width: 800px;
+  }
 }

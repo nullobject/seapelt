@@ -8,6 +8,7 @@ const ProjectsPage = ({data: {allProjectsJson: {edges}}}) => {
   const projects = edges.map(edge => edge.node)
   return (
     <Layout>
+      <h2>Projects</h2>
       <Projects projects={projects} />
     </Layout>
   )
