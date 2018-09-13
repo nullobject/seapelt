@@ -5,21 +5,17 @@
   li {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     img {
       width: 200px;
       height: 200px;
-      margin-right: 1rem;
+      margin-right: 2rem;
       margin-bottom: 1rem;
     }
 
     header {
       margin-bottom: 1rem;
-    }
-
-    .label, .year {
-      font-size: 1rem;
     }
   }
 }
