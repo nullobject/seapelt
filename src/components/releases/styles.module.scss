@@ -4,15 +4,16 @@
 
   li {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
-    header {
+    img {
+      width: 200px;
+      height: 200px;
+      margin-right: 1rem;
     }
 
-    .year {
-    }
-
-    .cover {
+    .label, .year {
+      font-size: 1rem;
     }
   }
 }

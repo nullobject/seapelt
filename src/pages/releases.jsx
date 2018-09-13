@@ -24,6 +24,7 @@ export const pageQuery = graphql`
           id
           title
           year
+          label
           cover
           url
         }
