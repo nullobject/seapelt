@@ -10,8 +10,8 @@ const Release = ({release: {title, year, label, cover, url}}) => {
       <div>
         <header>
           <h4>{title}</h4>
-          <span className={styles.label}>{label}, </span>
-          <span className={styles.year}>{year}</span>
+          <div className={styles.label}>{label}</div>
+          <div className={styles.year}>{year}</div>
         </header>
         <a href={url}>Listen</a>
       </div>
