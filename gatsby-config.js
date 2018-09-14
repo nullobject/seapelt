@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Seapelt',
-    description: 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog, a space where the human signal blurs with the natural environment.',
+    description: 'Seapelt is the moniker of Byron Bay down-tempo electronica artist Josh Bassett. His music explores the lines between digital and analog.',
     keywords: 'seapelt, electronic music, idm, ambient, electronica'
   },
   plugins: [
