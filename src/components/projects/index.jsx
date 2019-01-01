@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './styles.module.scss'
 
-const Project = ({project: {date, title, location}}) => (
+const Project = ({ project: { date, title, location } }) => (
   <li>
     <time dateTime='{date}'>{date}</time>
     <div>
@@ -14,7 +14,7 @@ const Project = ({project: {date, title, location}}) => (
   </li>
 )
 
-const Projects = ({projects}) => {
+const Projects = ({ projects }) => {
   const html = projects.map(project => <Project key={project.id} project={project} />)
   return <ul className={styles.projects}>{html}</ul>
 }

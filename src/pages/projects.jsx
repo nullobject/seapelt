@@ -1,10 +1,10 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Projects from '../components/projects'
 
-const ProjectsPage = ({data: {allProjectsJson: {edges}}}) => {
+const ProjectsPage = ({ data: { allProjectsJson: { edges } } }) => {
   const projects = edges.map(edge => edge.node)
   return (
     <Layout>

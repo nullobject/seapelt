@@ -3,7 +3,7 @@ import React from 'react'
 import Button from '../button'
 import styles from './styles.module.scss'
 
-const Header = ({title}) => (
+const Header = ({ title }) => (
   <header className={styles.header}>
     <nav>
       <Button to='/'>About</Button>
